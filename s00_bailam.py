@@ -27,6 +27,26 @@ hi(None, None)        | Hi!
 #endregion debai
 
 #region bailam
-def hi(name,gender):
-  return 'todo'
+def hi(name, gender):
+  if gender== 'f':
+    goi = 'Ms' 
+  elif gender== 'm':
+    goi = 'Mr'
+  elif name=='AI-BTX': 
+    return(f'Hi {name}!')
+  elif name==None:
+    return(f'Hi!')
+  return(f'Hi {goi} {name}!')
+
+
+
+mom = hi('Mom', 'f')
+dad = hi('Dad',  'm')
+aibtx = hi('AI-BTX', None)
+none = hi(None,  None)
+
+print(mom)
+print(dad)
+print(aibtx)
+print(none)
 #endregion bailam
